@@ -1,0 +1,6 @@
+@progresssoft_task.Server_HostAddress = http://localhost:5173
+
+GET {{progresssoft_task.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

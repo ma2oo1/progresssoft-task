@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "progresssoft-task.client", "progresssoft-task.client\progresssoft-task.client.esproj", "{90E75825-0647-5BED-FCF7-36794A2DE1D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "progresssoft-task.Server", "progresssoft-task.Server\progresssoft-task.Server.csproj", "{AF4B5904-4BFD-415E-B27D-98BB3899977C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90E75825-0647-5BED-FCF7-36794A2DE1D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90E75825-0647-5BED-FCF7-36794A2DE1D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90E75825-0647-5BED-FCF7-36794A2DE1D4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{90E75825-0647-5BED-FCF7-36794A2DE1D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90E75825-0647-5BED-FCF7-36794A2DE1D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90E75825-0647-5BED-FCF7-36794A2DE1D4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{AF4B5904-4BFD-415E-B27D-98BB3899977C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF4B5904-4BFD-415E-B27D-98BB3899977C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF4B5904-4BFD-415E-B27D-98BB3899977C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF4B5904-4BFD-415E-B27D-98BB3899977C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {90048A3D-2CB7-4300-B489-AEBE3E8C659C}
+	EndGlobalSection
+EndGlobal
