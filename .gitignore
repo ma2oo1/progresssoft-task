@@ -486,43 +486,43 @@ $RECYCLE.BIN/
 # See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
 
 # Compiled output
-/dist
-/tmp
-/out-tsc
-/bazel-out
+progresssoft-task.client/dist
+progresssoft-task.client/tmp
+progresssoft-task.client/out-tsc
+progresssoft-task.client/bazel-out
 
 # Node
-/node_modules
-npm-debug.log
-yarn-error.log
+progresssoft-task.client/node_modules
+progresssoft-task.client/npm-debug.log
+progresssoft-task.client/yarn-error.log
 
 # IDEs and editors
-.idea/
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+progresssoft-task.client/idea/
+progresssoft-task.client/project
+progresssoft-task.client/classpath
+progresssoft-task.client/c9/
+progresssoft-task.client/*.launch
+progresssoft-task.client/.settings/
+progresssoft-task.client/*.sublime-workspace
 
 # Visual Studio Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
+progresssoft-task.client/.vscode/*
+progresssoft-task.client/!.vscode/settings.json
+progresssoft-task.client/!.vscode/tasks.json
+progresssoft-task.client/!.vscode/launch.json
+progresssoft-task.client/!.vscode/extensions.json
+progresssoft-task.client/.history/*
 
 # Miscellaneous
-/.angular/cache
-.sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
+progresssoft-task.client/.angular/cache
+progresssoft-task.client/.sass-cache/
+progresssoft-task.client/connect.lock
+progresssoft-task.client/coverage
+progresssoft-task.client/libpeerconnection.log
+progresssoft-task.client/testem.log
+progresssoft-task.client/typings
 
 # System files
-.DS_Store
-Thumbs.db
+progresssoft-task.client/.DS_Store
+progresssoft-task.client/Thumbs.db
 
