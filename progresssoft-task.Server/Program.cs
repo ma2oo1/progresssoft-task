@@ -1,11 +1,22 @@
 using Microsoft.EntityFrameworkCore;
 using progresssoft_task.Server.Data;
+using progresssoft_task.Server.Repositories.Interfaces;
+using progresssoft_task.Server.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 string appConnectionString = builder.Configuration.GetSection("ConnectionStrings").GetSection("Default").Value!;
 // Add services to the container.
+
+//db connection
 builder.Services.AddDbContext<DBContext>(options => options.UseSqlServer(appConnectionString));
+
+
+//services and repos
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+
+
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
