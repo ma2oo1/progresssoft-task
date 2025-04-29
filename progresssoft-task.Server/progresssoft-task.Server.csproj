@@ -35,4 +35,21 @@
     </ProjectReference>
   </ItemGroup>
 
+	<Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
+		<!-- As part of publishing, ensure the JS resources are freshly built in production mode -->  
+		<Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />    
+		<Exec WorkingDirectory="$(SpaRoot)" Command="node --max-old-space-size=8192 ./node_modules/@angular/cli/bin/ng build --configuration production" /> 
+			<Exec WorkingDirectory="$(SpaRoot)" Command="npm run build:ssr --configuration production" Condition=" '$(BuildServerSideRenderer)' == 'true' " /> 
+		<!-- Include the newly-built files in the publish output -->   
+		<ItemGroup>
+			<DistFiles Include="$(SpaRoot)\dist*; $(SpaRoot)dist-server*" />   
+			<DistFiles Include="$(SpaRoot)\node_modules**" Condition="'$(BuildServerSideRenderer)' == 'true'" />   
+			<ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+				<RelativePath>wwwroot%(RecursiveDir)%(FileName)%(Extension)</RelativePath>       
+				<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>        
+				<ExcludeFromSingleFile>true</ExcludeFromSingleFile>       
+			</ResolvedFileToPublish>     
+		</ItemGroup>   
+	</Target>
+	
 </Project>

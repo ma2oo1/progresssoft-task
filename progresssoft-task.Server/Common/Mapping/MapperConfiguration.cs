@@ -12,6 +12,10 @@ namespace progresssoft_task.Server.Common.Mapping
             {
                 cfg.CreateMap<BusinessCard, BusinessCardDto>();
                 cfg.CreateMap<BusinessCard, BusinessCardDto>().ReverseMap();
+                cfg.CreateMap<BusinessCard, CreateCardRequestDto>();
+                cfg.CreateMap<BusinessCard, CreateCardRequestDto>().ReverseMap();
+                cfg.CreateMap<BusinessCardDto, CreateCardRequestDto>();
+                cfg.CreateMap<BusinessCardDto, CreateCardRequestDto>().ReverseMap();
             });
 
             var mapper = new Mapper(config);

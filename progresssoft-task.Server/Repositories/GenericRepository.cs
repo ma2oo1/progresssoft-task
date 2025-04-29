@@ -10,10 +10,10 @@ namespace progresssoft_task.Server.Repositories
         private readonly DBContext _dbContext;
         private readonly DbSet<T> _dbSet;
 
-        public GenericRepository(DBContext dbContext, DbSet<T> dbSet) { 
+        public GenericRepository(DBContext dbContext) { 
 
             _dbContext = dbContext;
-            _dbSet = dbSet;
+            _dbSet = dbContext.Set<T>();
         }
 
 
